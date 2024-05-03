@@ -87,6 +87,9 @@ function flagCell(row, col) {
   // TODO: Task 7 - Implement flags. Flags allow the player to mark cells that they think contain a bomb.
   //                When clicking a cell and holding shift, function flagCell() will be called for you.
   //
+
+  cells[row][col].hasBeenFlagged = true;
+
 }
 
 // This function is called once for each cell when rendering the game. The row and col of the current cell is
