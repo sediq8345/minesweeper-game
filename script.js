@@ -42,7 +42,13 @@ cells[9][5].isBomb = true;
 //                Add a BOMBS_COUNT constant so that you can easily change the amount of bombs placed. Put it next to the
 //                other constants.
 //
+const BOMBS_COUNT = 10;
 
+for (let i = 0; i < BOMBS_COUNT; i++){
+  let numR = Math.floor(Math.random() * ROWS_COUNT);
+  let numC = Math.floor(Math.random() * COLS_COUNT);
+  cells[numR][numC].isBomb = true;
+}
 
 // Once the game has been initialized, we "render" it.
 render();
