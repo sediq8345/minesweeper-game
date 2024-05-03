@@ -26,11 +26,17 @@ for (var row = 0; row < ROWS_COUNT; row++) {
 }
 
 //
-// TODO: Task 1 - add some bombs at fixed positions.
-// cells[0][1].isBomb = true;
-// cells[5][4].isBomb = true;
-// cells[9][9].isBomb = true;
-
+//TODO: Task 1 - add some bombs at fixed positions.
+cells[1][1].isBomb = true;
+cells[1][2].isBomb = true;
+cells[2][4].isBomb = true;
+cells[1][8].isBomb = true;
+cells[3][7].isBomb = true;
+cells[5][1].isBomb = true;
+cells[7][3].isBomb = true;
+cells[6][6].isBomb = true;
+cells[2][4].isBomb = true;
+cells[9][5].isBomb = true;
 //
 // TODO: Task 2 - Comment out the code of task 1. Instead of adding bombs in fixed places, add 10 of them in random places.
 //                Add a BOMBS_COUNT constant so that you can easily change the amount of bombs placed. Put it next to the
