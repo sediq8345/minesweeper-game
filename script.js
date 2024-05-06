@@ -133,21 +133,30 @@ function getBombsCount() {
   //
   // TODO: Task 9 - Implement stats: the counters currently always display 0, calculate and return the relevant values.
   //
-  return 0;
+  return BOMBS_COUNT;
 }
 
 function getClearedCells() {
+  let discoverSum = 0;
+  for (let x = 0; x < ROWS_COUNT; x++ ){
+    for (let y = 0; y < COLS_COUNT; y++ ){
+      if (cells[x][y].discovered === true){
+        discoverSum += 1;
+      }
+    }
+  }
   //
   // TODO: Task 9 - Implement stats: the counters currently always display 0, calculate and return the relevant values.
   //
-  return 0;
+  return discoverSum;
 }
-
 function getTotalCellsToClear() {
+  let totalCellsToClear = 0;
+  totalCellsToClear = ROWS_COUNT*COLS_COUNT - getClearedCells();
   //
   // TODO: Task 9 - Implement stats: the counters currently always display 0, calculate and return the relevant values.
   //
-  return 0;
+  return totalCellsToClear;
 }
 
 function checkForVictory() {
